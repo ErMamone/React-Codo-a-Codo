@@ -5,12 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
 <body>
     
 
+     <p class="card-title" id="botonDeLaVerdad">
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+          Toca para abrir la verdad
+        </button>
+      </p>
+      <div class="card-body">
+        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body" id="imgCard">
+                <div id ="container">
+                    <div id ="animate">
+                        <h5 class="card-title"><button type="button" class="btn btn-lg btn-primary" onclick="myMove()">Los gatos</button></h5>
+                    </div>
+                </div>
+                <p>Bienvenido, en este lugar solo adoramos a los gatos y no te voy a mentir, si no hay amor a los gatos, te asesinaran</p> 
+            </div>
+            <img id="imgCard" src="data:image/jpeg;base64,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" alt="gato persa">
+        </div>
+      </div>
+
+    <footer style="width: 600px;">
+        <div class="card redirection">
+            <div class="card-body">
+                <a href="https://www.google.com"><button type="button" class="btn btn-lg btn-primary" disabled>google</button></a>
+                <a href="https://www.instagram.com" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">IG</a>
+            </div>
+            <div class="card-header footer-next-back">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item"><a class="page-link" href="index.html" id="nextPage">Volver pagina</a></li>
+                      <li class="page-item"><a class="page-link" href="other.html" id="nextPage">Menu</a></li>
+                      <li class="page-item"><a class="page-link" href="other.html" id="nextPage">Siguiente pagina</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

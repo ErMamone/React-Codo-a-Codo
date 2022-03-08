@@ -1,0 +1,39 @@
+.redirection{
+    background-color: rgba(90, 90, 90, 0.199);
+    width: 90%;
+    height: 90%;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 20px;
+    border: 1px solid rgba(83, 83, 83, 0.705);
+}
+
+.footer-next-back{
+    background-color: rgba(128, 45, 45, 0.226);
+    border-radius: 5px;
+    border: 2px solid rgba(77, 38, 38, 0.726);
+    margin: 1em;
+}
+
+#nextPage{
+    margin: 5px;
+}
+
+#imgCard{
+    width: 30em;
+}
+
+#container {
+    height: 100px;
+    width: 400px;
+    position: relative;
+}
+#animate {
+    width: 50px;
+    position: absolute;
+}
+
+#botonDeLaVerdad{
+    margin-left: 1em;
+    margin-top: 1em;
+}
