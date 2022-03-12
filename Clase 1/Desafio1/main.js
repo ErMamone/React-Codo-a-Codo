@@ -10,13 +10,6 @@ let perro = new animal("perro", 5, "marron");
 
 console.log(perro)
 
-
-
-
-
-
-
-
 /**
  *   Imágenes
  *   Enlaces internos y externos
